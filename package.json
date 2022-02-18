@@ -1,6 +1,6 @@
 {
   "name": "cmri-ui",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A React UI Library.",
   "publishConfig": {
     "access": "public",
@@ -17,7 +17,6 @@
     "lib",
     "esm"
   ],
-
   "scripts": {
     "dev": "dumi dev",
     "start": "npm run dev",
