@@ -18,6 +18,7 @@
     "esm"
   ],
   "np": {
+    "yarn": false,
     "contents": "lib"
   },
   "scripts": {
