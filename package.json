@@ -2,6 +2,7 @@
   "name": "cmri-ui",
   "version": "1.2.8",
   "description": "A React UI Library.",
+  "homepage": "https://github.com/didiaidada/cmri-ui",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -23,6 +24,7 @@
     "build:site": "rimraf doc-site && dumi build",
     "preview:site": "cross-env SITE_BUILD_ENV=PREVIEW npm run build:site && serve doc-site",
     "deploy:site": "npm run build:site && gh-pages -d doc-site",
+    "publish": "gh-pages -d doc-site",
     "clean": "rimraf lib esm dist",
     "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
     "build": "npm run clean && npm run build:types && gulp",
