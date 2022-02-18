@@ -26,15 +26,12 @@
     "clean": "rimraf lib esm dist",
     "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
     "build": "npm run clean && npm run build:types && gulp",
-    "prepublishOnly": "npm run build",
     "release": "np --no-cleanup --no-tests --any-branch",
     "commit": "git-cz",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:update": "jest --updateSnapshot",
-    "new": "plop --plopfile ./scripts/plopfile.ts",
-    "postnew": "prettier --write src/**/*{ts,tsx} --loglevel silent"
+    "test:update": "jest --updateSnapshot"
   },
   "lint-staged": {
     "src/**/*.ts?(x)": [
