@@ -1,1 +1,1 @@
-console.log('yes')
+export { default as Alert } from './alert';
