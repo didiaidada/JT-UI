@@ -17,10 +17,7 @@
     "lib",
     "esm"
   ],
-  "np": {
-    "yarn": false,
-    "contents": "lib"
-  },
+
   "scripts": {
     "dev": "dumi dev",
     "start": "npm run dev",
