@@ -17,6 +17,7 @@
 /lib
 /esm
 /types
+/doc-site
 
 # umi
 .umi
