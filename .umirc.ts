@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
-let base = '/cmri-ui';
-let publicPath = '/cmri-ui/';
+let base = '/JT-UI';
+let publicPath = '/JT-UI/';
 
 if (process.env.SITE_BUILD_ENV === 'PREVIEW') {
   base = undefined;
