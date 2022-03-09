@@ -38,7 +38,7 @@ JT-UI 依据按钮的  `size` 提供2种类型的按钮，大按钮（`big`）�
 | htmlType | 设置 `button` 原生的 `type` 值，可选值请参考 [HTML 标准](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) | string | `button` |  |
 | icon | 设置按钮的图标组件 | ReactNode | - |  |
 | loading | 设置按钮载入状态 | boolean \| { delay: number } | false |  |
-| shape | 设置按钮形状 | `default` \| `circle` \| `round` | 'default' |  |
+| shape | 设置按钮形状 | `default` \| `circle` \| `round` | `default` |  |
 | target | 相当于 a 链接的 target 属性，href 存在时生效 | string | - |  |
 | onClick | 点击按钮时的回调 | (event) => void | - |  |
 
