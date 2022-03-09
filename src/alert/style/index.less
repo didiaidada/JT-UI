@@ -1,8 +1,74 @@
-@popupPrefix: happy-alert;
+.jiuTian-button {
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 2px;
+}
 
-.@{popupPrefix} {
-  padding: 20px;
-  color: white;
-  background: white;
-  border-radius: 3px;
+.button-size-big {
+  height: 40px;
+  padding: 9px 26px;
+}
+
+.button-size-default {
+  height: 32px;
+  padding: 5px 22px;
+}
+
+.button-type-primary {
+  color: #fff;
+  background-color: #0076ff;
+  border-color: #0076ff;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #3c94fa;
+    border-color: #3c94fa;
+  }
+}
+
+.button-type-default {
+  color: #585a69;
+  background-color: #fff;
+  border: 1px solid #cbcfd2;
+
+  &:hover,
+  &:focus {
+    color: #0076ff;
+    background: #fff;
+    border: 1px solid #0076ff;
+  }
+}
+
+.button-type-minor {
+  color: #0076ff;
+  background: #fff;
+  border: 1px solid #0076ff;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #0076ff;
+    border-color: #0076ff;
+  }
+}
+
+.button-type-text {
+    color: #5E6974;
+    border: none;
+    box-shadow: none;
+    &:hover,
+    &:focus {
+      color: #0076ff;
+    }
+}
+
+.button-type-link {
+    color: #0076ff;
+    border: none;
+    box-shadow: none;
+    &:hover,
+    &:focus {
+        color: #3C94FA;
+    }
 }
