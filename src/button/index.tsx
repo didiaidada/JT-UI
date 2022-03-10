@@ -16,7 +16,8 @@ const Button: React.FC<ButtonProps> = ({ size = 'default', type = 'default', ...
     },
     rest.className,
   );
-  return <AntButton {...rest} className={classes} />;
+  const nextProps = Object.assign({}, { ...rest }, { className: classes });
+  return <AntButton {...nextProps} />;
 };
 
 export default Button;
