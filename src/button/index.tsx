@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button as AntButton, ButtonProps as AntdButtonProps } from 'antd';
+import { Button as AntButton, ButtonProps as AntdButtonProps, ConfigProvider } from 'antd';
 import classNames from 'classnames';
 import './style';
 
@@ -17,7 +17,11 @@ const Button: React.FC<ButtonProps> = ({ size = 'default', type = 'default', ...
     rest.className,
   );
   const nextProps = Object.assign({}, { ...rest }, { className: classes });
-  return <AntButton {...nextProps} />;
+  return (
+    <ConfigProvider autoInsertSpaceInButton={false}>
+      <AntButton {...nextProps} />
+    </ConfigProvider>
+  );
 };
 
 export default Button;

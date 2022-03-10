@@ -7,7 +7,7 @@ export default () => (
     <h1>大按钮</h1>
     <div className="demo-button-section">
       <Button type="primary" size="big">
-        primary
+        取消
       </Button>
       <Button type="default" size="big">
         default
@@ -18,7 +18,7 @@ export default () => (
     </div>
     <h1>小按钮</h1>
     <div className="demo-button-section">
-      <Button type="primary">primary</Button>
+      <Button type="primary">确认</Button>
       <Button type="default">default</Button>
       <Button type="minor">minor</Button>
     </div>
