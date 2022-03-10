@@ -9,7 +9,6 @@ export type ButtonProps = { size?: 'big' | 'default' } & {
 
 const Button: React.FC<ButtonProps> = ({ size = 'default', type = 'default', ...rest }) => {
   const classes = classNames(
-    rest.prefixCls,
     {
       'jiuTian-button': true,
       [`button-type-${type}`]: type,
@@ -17,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({ size = 'default', type = 'default', ...
     },
     rest.className,
   );
-  return <AntButton className={classes} {...rest} />;
+  return <AntButton {...rest} className={classes} />;
 };
 
 export default Button;
