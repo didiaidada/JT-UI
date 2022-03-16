@@ -4,6 +4,9 @@ const less = require('gulp-less');
 const autoprefixer = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
 const through2 = require('through2');
+const imagemin = require('gulp-imagemin');
+
+
 
 const paths = {
   dest: {
@@ -13,6 +16,7 @@ const paths = {
   },
   styles: 'src/**/*.less',
   scripts: ['src/**/*.{ts,tsx}', '!src/**/demo/*.{ts,tsx}', '!src/**/__tests__/*.{ts,tsx}'],
+  images: ['src/**/*.{png,jpg,gif,svg}'],
 };
 
 /**
@@ -26,6 +30,17 @@ function cssInjection(content) {
     .replace(/\/style\/?'/g, "/style/css'")
     .replace(/\/style\/?"/g, '/style/css"')
     .replace(/\.less/g, '.css');
+}
+/**
+ * 
+ * 编译image
+ */
+function img() {
+  return gulp
+    .src(paths.images) //后缀都用小写，不然不识别
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.dest.lib))
+    .pipe(gulp.dest(paths.dest.esm))
 }
 
 /**
@@ -95,7 +110,7 @@ function less2css() {
     .pipe(gulp.dest(paths.dest.esm));
 }
 
-const build = gulp.parallel(buildScripts, copyLess, less2css);
+const build = gulp.parallel(buildScripts, copyLess, less2css, img);
 
 exports.build = build;
 
