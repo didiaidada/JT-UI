@@ -7,7 +7,7 @@ interface ITopDownLayout {
   title?: string;
   showSearch?: ISearchInput;
   breadcrumb?: IBreadcrumb;
-  upInnerComponent?: JSX.Element;
+  topInnerComponent?: JSX.Element;
   downInnerComponents?: JSX.Element[] | JSX.Element;
 }
 
@@ -24,7 +24,7 @@ const TopComponent = (props: Omit<ITopDownLayout, 'downInnerComponentList'>) => 
                 <SearchInput {...props.showSearch} />
               </div>
             )}
-            {props.upInnerComponent}
+            {props.topInnerComponent}
           </Breadcrumb>
         </div>
       </div>
@@ -35,7 +35,7 @@ const TopComponent = (props: Omit<ITopDownLayout, 'downInnerComponentList'>) => 
       <div className="jt-top-inner">
         {props.title && <div className="jt-top-title">{props.title}</div>}
         {props.showSearch && <SearchInput {...props.showSearch} />}
-        {props.upInnerComponent}
+        {props.topInnerComponent}
       </div>
     </div>
   );
@@ -67,7 +67,7 @@ const TopDownLayout = (props: ITopDownLayout) => (
       title={props.title}
       showSearch={props.showSearch}
       breadcrumb={props.breadcrumb}
-      upInnerComponent={props.upInnerComponent}
+      topInnerComponent={props.topInnerComponent}
     />
     <DownInnerComponent downInnerComponents={props.downInnerComponents} />
   </div>

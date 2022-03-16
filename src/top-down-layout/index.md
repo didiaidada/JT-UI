@@ -39,7 +39,7 @@ group:
 | title | 页面标题 | string | `null` |
 | breadcrumb | 面包屑 | [Breadcrumb](./breadcrumb) | `null` |
 | showSearch | 是否展示搜索框 | [SearchInput](./search-input) | - |  |
-| upInnerComponent | 上面其他组件 | ReactComponent | `null` |  |
-| downInnerComponents | 下面内部组件 | ReactComponent[]| `null` |  |
+| topInnerComponent | 上面其他组件 | JSX.Element | `null` |  |
+| downInnerComponents | 下面内部组件 | JSX.Element[] | JSX.Element | `null` |  |
 
 支持原生 button 的其他所有属性。

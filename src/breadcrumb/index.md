@@ -43,7 +43,7 @@ interface Ipath {
 | 属性 | 说明 | 类型 | 默认值 | 版本 |
 | --- | --- | --- | --- | --- |
 | pathList | 面包屑数据数组，包含文本和链接 | Ipath[] | - |
-| extra | 附加组件 | React.Component | - |  |
+| extra | 附加组件 | JSX.Element | - |  |
 | title | 面包屑下面的标题 | `string` | - |  |
 
 
