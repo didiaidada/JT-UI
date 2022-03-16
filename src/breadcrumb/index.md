@@ -8,7 +8,7 @@ group:
 
 # Breadcrumb 面包屑
 
-Breadcrumb 复制于 app-factory-fe/src/app/components/sc-breadcrumb, 内部逻辑暂未修改,部分样式设置不合理，后续会调整
+Breadcrumb 复制于 app-factory-fe/src/app/components/sc-breadcrumb, **内部逻辑暂未修改,部分不合理，后续会调整**
 
 Breadcrumb 变更 antd Breadcrumb 的部分样式，且支持引入子组件
 

@@ -20,6 +20,8 @@ group:
 
 ### 基本用法
 
+**注意 ⚠️ demo-window-out 和 demo-window 是为了模拟浏览器大小，实际开发不用引入这两个dom**
+
 <code src="./demo/basic"></code>  
 
 <code src="./demo"></code>  
