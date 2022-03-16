@@ -32,7 +32,7 @@ export default () => (
       <TopBottomLayout
         title="测试标题"
         breadcrumb={breadcrumb}
-        upInnerComponent={upInnerComponent()}
+        topInnerComponent={upInnerComponent()}
         showSearch={showSearch}
         downInnerComponents={[
           downInnerComponentList(),

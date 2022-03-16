@@ -55,7 +55,9 @@ const DownInnerComponent = (props: Pick<ITopDownLayout, 'downInnerComponents'>) 
   return (
     <React.Fragment>
       {props.downInnerComponents.map(component => (
-        <div className="jt-down-wrapper">{component}</div>
+        <div className="jt-down-wrapper" key={component.key}>
+          {component}
+        </div>
       ))}
     </React.Fragment>
   );
