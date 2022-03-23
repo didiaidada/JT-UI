@@ -1,4 +1,6 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { SearchOutlined } from '@ant-design/icons';
 import Button from '..';
 import './index.less';
 
@@ -12,7 +14,7 @@ export default () => (
       <Button type="default" size="big">
         default
       </Button>
-      <Button type="minor" size="big">
+      <Button type="minor" size="big" danger icon={<SearchOutlined />}>
         minor
       </Button>
     </div>

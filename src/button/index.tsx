@@ -13,6 +13,7 @@ const Button: React.FC<ButtonProps> = ({ size = 'default', type = 'default', ...
       'jiuTian-button': true,
       [`button-type-${type}`]: type,
       [`button-size-${size}`]: size,
+      'button-icon': !!rest.icon,
     },
     rest.className,
   );

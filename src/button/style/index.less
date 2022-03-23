@@ -7,11 +7,21 @@
 .button-size-big {
   height: 40px;
   padding: 9px 29px;
+
+  &.button-icon {
+  padding: 9px 15px;
+
+  }
 }
 
 .button-size-default {
   height: 32px;
   padding: 5px 21px;
+
+  &.button-icon {
+    padding: 5px 15px;
+  
+    }
 }
 
 .button-type-primary {
@@ -24,6 +34,19 @@
     color: #fff;
     background: #3c94fa;
     border-color: #3c94fa;
+  }
+
+  // dangerous
+  &.ant-btn-dangerous {
+    background-color: #ED4141;
+    border-color: #ED4141;
+
+    &:hover,
+    &:focus {
+    color: #fff;
+    background: #ED4141;
+    border-color: #ED4141;
+  }
   }
 }
 
@@ -38,6 +61,17 @@
     background: #fff;
     border: 1px solid #0076ff;
   }
+
+   // dangerous
+   &.ant-btn-dangerous {
+
+    &:hover,
+    &:focus {
+    color: #ED4141;
+    background: #fff;
+    border: 1px solid #ED4141;
+  }
+  }
 }
 
 .button-type-minor {
@@ -50,6 +84,19 @@
     color: #fff;
     background-color: #0076ff;
     border-color: #0076ff;
+  }
+
+  // dangerous
+  &.ant-btn-dangerous {
+    color: #ED4141;
+    border: 1px solid #ED4141;
+
+    &:hover,
+    &:focus {
+    color: #fff;
+    background-color: #ED4141;
+    border-color: #ED4141;
+  }
   }
 }
 
