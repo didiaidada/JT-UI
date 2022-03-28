@@ -65,6 +65,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
+    "antd": "~4.16.13",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
     "@babel/plugin-transform-runtime": "^7.7.6",
