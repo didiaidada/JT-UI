@@ -1,6 +1,6 @@
 {
   "name": "cmri-ui",
-  "version": "1.2.19",
+  "version": "1.2.20",
   "description": "A React UI Library.",
   "homepage": "https://didiaidada.github.io/JT-UI/",
   "publishConfig": {
@@ -65,7 +65,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
-    "antd": "~4.16.13",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
     "@babel/plugin-transform-runtime": "^7.7.6",
@@ -83,6 +82,7 @@
     "@typescript-eslint/parser": "^1.9.0",
     "@umijs/fabric": "^1.2.12",
     "@umijs/preset-react": "^2.1.1",
+    "antd": "~4.16.13",
     "babel-plugin-import": "^1.13.3",
     "commitizen": "^4.0.3",
     "cpr": "^3.0.1",
